@@ -26,10 +26,10 @@ static class TwitterFacade{
   // Insert your authentication credentials here 
   static void authenticate(){
     ConfigurationBuilder cb = new ConfigurationBuilder();
-    cb.setOAuthConsumerKey("d24U4j7UHeKsuFnb24h0ZUkl1");
-    cb.setOAuthConsumerSecret("yLUJEdRJBqnMQtuna2Yord3OjXHiqTDupjT0JRCNKJPbAaNS5b");
-    cb.setOAuthAccessToken("912678625975193600-Ec3V9B8rr95UVMaIh9GSG5eWqXvyn2P");
-    cb.setOAuthAccessTokenSecret("r8LIdzzLnyo5oLrPt5ndj8pRO3dYjUSd9Epqk70Dn25Pf");  
+    cb.setOAuthConsumerKey( <YOUR KEY HERE> );
+    cb.setOAuthConsumerSecret( <YOUR SECRET HERE> );
+    cb.setOAuthAccessToken( <YOUR TOKEN HERE> );
+    cb.setOAuthAccessTokenSecret( <YOUR TOKEN SECRET HERE> );  
     twitter = new TwitterFactory(cb.build()).getInstance();
     authenticated = true;
     pl("TwitterFacade: Successfully authenticated on twitter");
